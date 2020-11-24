@@ -1,5 +1,9 @@
 $(function(){
     new fullpage('#fullpage', {
+        //autoScrolling: false,
+       //fitToSection: false,
+       scrollOverflow: true,
+
         anchors: ['page1', 'page2', 'page3', 'page4'],
 
         sectionsColor: ['#84D8C8', 'white', '#84D8C8', 'white'],
@@ -11,6 +15,6 @@ $(document).on('click', '#moveTo', function(){
   });
 
 
+ 
+  
    });
-
-   
