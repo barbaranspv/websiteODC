@@ -7,7 +7,6 @@ html, body {
 .parent {
   overflow-y: scroll;
   height: 100vh;
-  scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
   -ms-scroll-snap-type: mandatory;
   /* IE/Edge */
@@ -22,7 +21,6 @@ section {
   color: white;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  scroll-snap-align: start;
   /* latest (Chrome 69+) */
   scroll-snap-coordinate: 0% 0%;
   /* older (Firefox/IE) */
