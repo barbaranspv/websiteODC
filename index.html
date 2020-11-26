@@ -1,89 +1,226 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-<link rel="stylesheet" href="index.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+  <title>turtle.</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    body {
+      font-family: 'Metropolis';
+    }
+  </style>
 </head>
 
-<!--LINK JQUERY-->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script  src="libraries/fullpage.min.js"></script>
-<script type="text/javascript" src="libraries/scrolloverflow.js"></script>
+<body>
+  <div class="parent">
+    <section id="section0">
 
-<link rel="stylesheet" href="libraries/fullpage.css">
-<!--PERSONAL SCRIPT JavaScript-->
-<script src="index.js"></script>
-
-
-
-<div id="fullpage">
-    <div class="section" id="section0">
-        <div class="container">
-            <div class="item">
-                <img src="./assets/Group 1.svg" />
-        </div>
-        
-            <div class="item" id="botaodown">
-                <img id="moveTo" src="./assets/Group 5.svg" />
-            </div>
+      <div class="container" id="smallcontainer">
+        <div class="item" id="logo">
+          <img id="logoimg" src="./assets/Group 1.svg" />
         </div>
 
+        <div class="item" id="botaodown">
+          <img id="moveTo" src="./assets/Group 5.svg" />
+        </div>
+      </div>
 
-    </div>
-    <div class="section" id="section1">
-        <div class="slide" data-anchor="slide1">
-           <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Captura acidental<br>em redes de pesca.</h1></div>
+    </section>
+
+    <section id="section1">
+      <div id="slider">
+        <div class="slide active">
+
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Captura acidental<br>em redes de pesca.</h1>
             </div>
-
+          </div>
 
         </div>
         <div class="slide" data-anchor="slide2">
-            <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Desenvolvimento<br>Costeiro.</h1></div>
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Desenvolvimento<br>Costeiro.</h1>
             </div>
+          </div>
         </div>
         <div class="slide" data-anchor="slide3">
-            <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Aquecimento<br>Global.</h1></div>
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Aquecimento<br>Global.</h1>
             </div>
+          </div>
         </div>
         <div class="slide" data-anchor="slide4">
-            <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Poluição.</h1></div>
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Poluição.</h1>
             </div>
+          </div>
         </div>
         <div class="slide" data-anchor="slide5">
-            <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Tráfico de<br>tartarugas e<br>carapaças.</h1></div>
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Tráfico de<br>tartarugas e<br>carapaças.</h1>
             </div>
+          </div>
         </div>
         <div class="slide" data-anchor="slide6">
-            <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Plástico.</h1></div>
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Plástico.</h1>
             </div>
+          </div>
         </div>
         <div class="slide" data-anchor="slide6">
-            <div class="row" id="row3">
-                <div class="column">
-                    <img src="./assets/turtlealgi.png" /></div>
-                <div class="column"><h1>Consumo ilegal de<br>ovos e carne das<br>tartarugas.</h1></div>
+          <div class="row" id="row3">
+            <div class="column">
+              <img class="slideturtle" src="./assets/turtlealgi.png" /></div>
+            <div class="column" id="column2">
+              <h1>Consumo ilegal de<br>ovos e carne das<br>tartarugas.</h1>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <img id="leftarrow" src="./assets/leftarrow.svg">&nbsp&nbsp&nbsp
+        <img id="rightarrow" src="./assets/rightarrow.svg">
+      </div>
 
-    </div>
-    <div class="section" id="section2">Section 3</div>
-    <div class="section">Section 4</div>
-</div>
+
+    </section>
+
+    <section id="section2">
+      <div id="tituloAfeta">O que nos prejudica.</div>
+      <div class="container" id="afetaContainer">
+        <div class="container" id="colunaAfeta1">
+          <div class="itemAfeta" id="capturaAcidental">
+            <img id="capturaImg" src="./assets/capturaacidental.png" />
+            <div id="tituloContainer">
+              <img id="tinta1" src="./assets/tinta1.png" />
+              <h3>Captura acidental em<br>redes de pesca.</h3>
+            </div>
+            <h4> Todos os anos, centenas de milhares de tartarugas marinhas são capturadas acidentalmente em redes de
+              pesca, dedicadas à pesca de outros animais.<h4>
+                </h3>
+          </div>
+          <div class="itemAfeta" id="aquecimentoGlobal">
+            <img id="aquecimentoImg" src="./assets/aquecimentoglobal.png" />
+            <div id="tituloContainer">
+              <img id="tinta2" src="./assets/tinta2.png" />
+              <h3>Aquecimento Global.</h3>
+            </div>
+            <h4> Todos os estados da vida das tartarugas marinhas são afetados por condições ambientais, como a
+              temperatura, até mesmo o sexo da tartaruga bebé. Temperaturas quentes incomuns causadas por alterações
+              climáticas têm vindo a perturbar as percentagens habituais, resultando na chocagem de menos machos. Para
+              além disto, o aquecimento global pode ainda causar subida do nível médio do mar, destruindo praias
+              cruciais à chocagem dos ovos, bem como os seus ninhos.</h4>
+          </div>
+          <div class="itemAfeta" id="traficoT">
+            <img id="traficoTImg" src="./assets/traficoT.png" />
+            <div id="tituloContainer">
+              <img id="tinta3" src="./assets/tinta3.png" />
+              <h3>Tráfico de tartarugas e carapaças.</h3>
+            </div>
+            <h4> A captura de tartarugas e tráfico em mercados domésticos e internacionais encontra-se proibida
+              mundialmente, no entanto continua a verificar-se em todo mundo, sendo muito requisitadas pelas suas
+              carapaças.
+            </h4>
+          </div>
+          <div class="itemAfeta" id="consumoOvos">
+            <img id="consumoImg" src="./assets/consumoOvos.png" />
+            <div id="tituloContainer">
+              <img id="tinta1" src="./assets/tinta1.png" />
+              <h3>Consumo ilegal de ovos e carne das tartarugas.</h3>
+            </div>
+            <h4>A carne e ovos de tartaruga ainda são uma forma de alimento e de enriquecimento para muita gente em todo
+              o mundo. Para além disto, algumas pessoas matam tartarugas para remédios e cerimónias religiosas. Todos os
+              anos, dezenas de milhares de tartarugas são assassinadas destas formas, devastando populações de espécies
+              que já estão em perigo de extinção.
+            </h4>
+          </div>
+        </div>
+        <div class="container" id="colunaAfeta2">
+          <div class="itemAfeta" id="desenvolvimentoCosteiro">
+            <img id="desenvolvimentoImg" src="./assets/desenvolvimentoCosteiro.png" />
+            <div id="tituloContainer">
+              <img id="tinta31" src="./assets/tinta3.png" />
+              <h3>Desenvolvimento costeiro.</h3>
+            </div>
+            <h4>Sendo as tartarugas dependentes de praias para porem os seus ovos, a construção descontrolada na costa,
+              a sobrepopulação nas praias e outras atividades humanas têm vindo a destruir e  a perturbar o processo de
+              chocagem dos ovos.  A luz das estradas desorienta as tartarugas bebés no seu caminho para o mar, podendo
+              estas falecer por desidratação, predação ou mesmo por atropelamento nas marginais, e a construção costeira
+              compacta a areia circundante, impedindo as fêmeas de por os seus ovos na areia. Para além disto, locais de
+              alimento das tartarugas  tais como corais e algas têm vindo a ser cada vez mais perturbados por atividades
+              costeiras, dificultando assim a sua sobrevivência.
+            </h4>
+          </div>
+          <div class="itemAfeta" id="poluicao">
+            <img id="poluicaoImg" src="./assets/poluicao.png" />
+            <div id="tituloContainer">
+              <img id="tinta4" src="./assets/tinta4.png" />
+              <h3>Poluição.</h3>
+            </div>
+            <h4>Para além da poluição por parte dos plásticos, a poluição marinha com químicos pode ser prejudicial para
+              estes animais. Quando a poluição entra no mar, contamina e mata animais que servem de comida às
+              tartarugas. Derrames de óleo, poluição costeira e fertilizantes contribuem todos para a poluição da água.
+              À medida que as toxinas são libertadas dos poluentes, ficam mais concentradas. Como resultado, estas
+              partículas mais toxicas tornam se comida para muitos seres da "food chain", incluindo as tartarugas.
+          </div>
+          </h4>
+          <div class="itemAfeta" id="plastico">
+            <img id="plasticoImg" src="./assets/plastico.png" />
+            <div id="tituloContainer">
+              <img id="tinta5" src="./assets/tinta5.png" />
+              <h3>Plástico.</h3>
+            </div>
+            <h4> Recorrentemente, as tartarugas marinhas confundem sacos de plástico por alforrecas, comendo-as, o que
+              pode levar à sua morte. Pesquisas mostram que uma tartaruga tem  22% de probabilidade de morrer  se comer
+              apenas um pedaço de plástico. O plástico pode cortar órgãos e fazer feridas, ou até mesmo entupir os
+              intestinos.
+            </h4>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="section3">
+      <span>3. Short section</span>
+    </section>
+
+    <section id="section4">
+      <span>4. Viewport height section</span>
+    </section>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
