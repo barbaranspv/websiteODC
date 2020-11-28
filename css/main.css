@@ -394,22 +394,7 @@ h4 {
     #capturaAcidental {
       padding: 0px;
     }
-    #aquecimentoGlobal {
-      padding-left: 0px;
-    }
-    #traficoT {
-      padding-left: 0px;
-    }
-    #consumoOvos {
-      padding-left: 0px;
-    }
-    #desenvolvimentoCosteiro {
-      padding-left: 0px;
-    }
-    #poluicao {
-      padding-left: 0px;
-    }
-    #plastico {
+    #poluicao, #plastico, #desenvolvimentoCosteiro, #consumoOvos, #traficoT, #aquecimentoGlobal {
       padding-left: 0px;
     }
   }
