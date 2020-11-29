@@ -47,6 +47,12 @@ section {
 
 #logoimg {
   margin-top: 60px;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #botaodown {
@@ -313,10 +319,64 @@ h4 {
 /*-------------------------------------------------------------------------SECÇÃO 3 - DICAS------------------------------------------------------------------*/
 
 #section3 {
-  height: 100vh;
+  height: 1500px;
   background: #282828;
   scroll-snap-align: start;
   /* latest (Chrome 69+) */
+}
+
+#tituloDicas {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 88px;
+  padding-top: 88px;
+}
+
+#textoDicas {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: lighter;
+  padding-left: 88px;
+  padding-top: 64px;
+  width: 45%;
+}
+
+#dicasContainer {
+  padding-left: 124px;
+  padding-right: 124px;
+  padding-top: 67px;
+  display: grid;
+  grid-gap: 60px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 232px;
+  height: 303px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  transform: rotateY(180deg);
 }
 
 /*-------------------------------------------------------------------------------SECÇÃO 4------------------------------------------------------------------*/
@@ -330,97 +390,98 @@ h4 {
 
 /*-----------------------------------------------------------------RESPONSIVIDADE-----------------------------------------------------------------------*/
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-
-@media screen and (max-width: 1400px) {
-  /*
-    #section2{
-      height: 490vh;
-
-    }*/
-}
-
-/* On screens that are 992px wide or less, go from four columns to two columns */
-
-@media screen and (max-width: 1300px) {
-  /* #section2{
+@media screen and (max-width: 1340px) {
+  #section3 {
+    height: 1900px
+  }
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 1300px) {
+    /* #section2{
     height: 380vh;
 
   }
 */
-  #capturaAcidental {
-    padding-left: 70px;
-  }
-  #aquecimentoGlobal {
-    padding-left: 104px;
-  }
-  #traficoT {
-    padding-left: 46px;
-  }
-  #consumoOvos {
-    padding-left: 82px;
-  }
-  #desenvolvimentoCosteiro {
-    padding-left: 47px;
-  }
-  #poluicao {
-    padding-left: 60px;
-  }
-  @media screen and (max-width: 1050px) {
-    h1 {
-      font-size: 50px;
-    }
-    .slideturtle {
-      width: 479px;
-      height: 325px;
-    }
-    .itemAfeta {
-      width: 464px;
-    }
-    #afetaContainer {
-      display: block;
-      flex-direction: column;
-      align-items: center;
-    }
-    #colunaAfeta1, #colunaAfeta2 {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #section2 {
-      height: 6000px;
-    }
     #capturaAcidental {
-      padding: 0px;
+      padding-left: 70px;
     }
-    #poluicao, #plastico, #desenvolvimentoCosteiro, #consumoOvos, #traficoT, #aquecimentoGlobal {
-      padding-left: 0px;
+    #aquecimentoGlobal {
+      padding-left: 104px;
     }
-  }
-  @media screen and (max-width: 733px) {
-    #row3 {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    #traficoT {
+      padding-left: 46px;
     }
-    h1 {
-      font-size: 50px;
+    #consumoOvos {
+      padding-left: 82px;
     }
-    .slideturtle {
-      align-self: flex-end;
-      width: 479px;
-      height: 325px;
+    #desenvolvimentoCosteiro {
+      padding-left: 47px;
     }
-    #column2 {
-      height: 10vh;
+    #poluicao {
+      padding-left: 60px;
     }
-  }
-}
-
-/*
+    @media screen and (max-width: 1050px) {
+      h1 {
+        font-size: 50px;
+      }
+      .slideturtle {
+        width: 479px;
+        height: 325px;
+      }
+      .itemAfeta {
+        width: 464px;
+      }
+      #afetaContainer {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+      }
+      #colunaAfeta1, #colunaAfeta2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #section2 {
+        height: 6000px;
+      }
+      #capturaAcidental {
+        padding: 0px;
+      }
+      #poluicao, #plastico, #desenvolvimentoCosteiro, #consumoOvos, #traficoT, #aquecimentoGlobal {
+        padding-left: 0px;
+      }
+    }
+    @media screen and (max-width: 1055px) {
+      #section3 {
+        height: 2600px
+      }
+    }
+    @media screen and (max-width: 770px) {
+      #section3 {
+        height: 4800px
+      }
+      @media screen and (max-width: 733px) {
+        #row3 {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        h1 {
+          font-size: 50px;
+        }
+        .slideturtle {
+          align-self: flex-end;
+          width: 479px;
+          height: 325px;
+        }
+        #column2 {
+          height: 10vh;
+        }
+      }
+    }
+    /*
 
 @media screen and (max-height: 850px) {
   #section2{
