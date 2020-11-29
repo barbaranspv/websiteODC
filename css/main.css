@@ -394,104 +394,96 @@ h4 {
   #section3 {
     height: 1900px
   }
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-  @media screen and (max-width: 1300px) {
-    /* #section2{
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+
+@media screen and (max-width: 1300px) {
+  /* #section2{
     height: 380vh;
 
   }
 */
-    #capturaAcidental {
-      padding-left: 70px;
-    }
-    #aquecimentoGlobal {
-      padding-left: 104px;
-    }
-    #traficoT {
-      padding-left: 46px;
-    }
-    #consumoOvos {
-      padding-left: 82px;
-    }
-    #desenvolvimentoCosteiro {
-      padding-left: 47px;
-    }
-    #poluicao {
-      padding-left: 60px;
-    }
-    @media screen and (max-width: 1050px) {
-      h1 {
-        font-size: 50px;
-      }
-      .slideturtle {
-        width: 479px;
-        height: 325px;
-      }
-      .itemAfeta {
-        width: 464px;
-      }
-      #afetaContainer {
-        display: block;
-        flex-direction: column;
-        align-items: center;
-      }
-      #colunaAfeta1, #colunaAfeta2 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      #section2 {
-        height: 6000px;
-      }
-      #capturaAcidental {
-        padding: 0px;
-      }
-      #poluicao, #plastico, #desenvolvimentoCosteiro, #consumoOvos, #traficoT, #aquecimentoGlobal {
-        padding-left: 0px;
-      }
-    }
-    @media screen and (max-width: 1055px) {
-      #section3 {
-        height: 2600px
-      }
-    }
-    @media screen and (max-width: 770px) {
-      #section3 {
-        height: 4800px
-      }
-      @media screen and (max-width: 733px) {
-        #row3 {
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-        h1 {
-          font-size: 50px;
-        }
-        .slideturtle {
-          align-self: flex-end;
-          width: 479px;
-          height: 325px;
-        }
-        #column2 {
-          height: 10vh;
-        }
-      }
-    }
-    /*
-
-@media screen and (max-height: 850px) {
-  #section2{
-    height: 800vh;
-    
+  #capturaAcidental {
+    padding-left: 70px;
   }
+  #aquecimentoGlobal {
+    padding-left: 104px;
+  }
+  #traficoT {
+    padding-left: 46px;
+  }
+  #consumoOvos {
+    padding-left: 82px;
+  }
+  #desenvolvimentoCosteiro {
+    padding-left: 47px;
+  }
+  #poluicao {
+    padding-left: 60px;
+  }
+  @media screen and (max-width: 1050px) {
+    h1 {
+      font-size: 50px;
+    }
+    .slideturtle {
+      width: 479px;
+      height: 325px;
+    }
+    .itemAfeta {
+      width: 464px;
+    }
+    #afetaContainer {
+      display: block;
+      flex-direction: column;
+      align-items: center;
+    }
+    #colunaAfeta1, #colunaAfeta2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #section2 {
+      height: 6000px;
+    }
+    #capturaAcidental {
+      padding: 0px;
+    }
+    #poluicao, #plastico, #desenvolvimentoCosteiro, #consumoOvos, #traficoT, #aquecimentoGlobal {
+      padding-left: 0px;
+    }
+  }
+}
 
+@media screen and (max-width: 1055px) {
+  #section3 {
+    height: 2600px
+  }
+}
 
-  @media screen and (max-height: 750px) {
-    #section2{
-      height: 920vh;
-      
-    }*/
+@media screen and (max-width: 770px) {
+  #section3 {
+    height: 4800px
+  }
+  @media screen and (max-width: 733px) {
+    #row3 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    .slideturtle {
+      align-self: flex-end;
+      width: 479px;
+      height: 325px;
+    }
+    #column2 {
+      height: 10vh;
+    }
+  }
+}
