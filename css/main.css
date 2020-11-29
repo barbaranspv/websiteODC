@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url("../fonts/Metropolis-Regular.otf") format('opentype'), url("../fonts/Metropolis-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Metropolis-Regular.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Metropolis-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Metropolis-Bold';
+  src: url("../fonts/Metropolis-Bold.otf") format('opentype'), url("../fonts/Metropolis-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Metropolis-Bold.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Metropolis-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Metropolis-Light';
+  src: url("../fonts/Metropolis-Light.otf") format('opentype'), url("../fonts/Metropolis-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Metropolis-Light.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Metropolis-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Metropolis-ExtraLight';
+  src: url("../fonts/Metropolis-ExtraLight.otf") format('opentype'), url("../fonts/Metropolis-ExtraLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/Metropolis-ExtraLight.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/Metropolis-ExtraLight.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
 html, body {
   margin: 0px;
   height: 100vh;
@@ -94,6 +126,7 @@ section {
 }
 
 h1 {
+  font-family: 'Metropolis-Bold';
   color: #282828;
   font-size: 64px;
 }
@@ -155,6 +188,7 @@ h1 {
 }
 
 #tituloAfeta {
+  font-family: 'Metropolis-Bold';
   color: #84D8C8;
   font-size: 45px;
   font-weight: bold;
@@ -163,6 +197,7 @@ h1 {
 }
 
 #tituloContainer {
+  font-family: 'Metropolis-Bold';
   position: relative;
   display: inline-block;
   padding-top: 3vh;
@@ -209,24 +244,25 @@ h1 {
 }
 
 h3 {
+  font-family: 'Metropolis-Bold';
   position: absolute;
-  ;
   left: 0px;
   top: 0px;
   font-size: 32px;
   color: #282828;
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 24px;
   width: 383px;
 }
 
 h4 {
+  font-family: 'Metropolis-ExtraLight';
   line-height: 1.2;
   font-size: 16px;
   color: #282828;
   font-weight: lighter;
-  margin-top: 1vh;
   width: 384px;
+  margin: 0px;
 }
 
 #colunaAfeta1 {
@@ -328,7 +364,7 @@ h4 {
 #tituloDicas {
   color: #ffffff;
   font-size: 40px;
-  font-weight: bold;
+  font-family: 'Metropolis-Bold';
   padding-left: 88px;
   padding-top: 88px;
 }
@@ -336,7 +372,7 @@ h4 {
 #textoDicas {
   color: #ffffff;
   font-size: 24px;
-  font-weight: lighter;
+  font-family: 'Metropolis-ExtraLight';
   padding-left: 88px;
   padding-top: 64px;
   width: 45%;
