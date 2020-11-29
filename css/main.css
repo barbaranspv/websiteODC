@@ -390,9 +390,12 @@ h4 {
 
 /*-----------------------------------------------------------------RESPONSIVIDADE-----------------------------------------------------------------------*/
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1339px) {
   #section3 {
     height: 1900px
+  }
+  #textoDicas {
+    width: 54%;
   }
 }
 
@@ -459,6 +462,13 @@ h4 {
 @media screen and (max-width: 1055px) {
   #section3 {
     height: 2600px
+  }
+  #textoDicas {
+    width: 65%;
+    padding-left: 44px;
+  }
+  #tituloDicas {
+    padding-left: 44px;
   }
 }
 
