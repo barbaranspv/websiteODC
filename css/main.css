@@ -185,8 +185,8 @@ h1 {
 
 #afetaContainer {
   display: flex;
-  padding-left: 7vw;
-  padding-right: 7vw;
+  padding-left: 8vw;
+  padding-right: 1vw;
 }
 
 #tituloAfeta {
@@ -286,6 +286,7 @@ h4 {
   display: flex;
   align-items: left;
   flex-direction: column;
+  width: 464px;
 }
 
 #capturaImg {
@@ -345,6 +346,7 @@ h4 {
 #poluicao {
   padding-top: 126px;
   padding-left: 175px;
+  margin: 0px
 }
 
 #plasticoImg {
