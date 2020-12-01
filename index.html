@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>turtle.</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
   <style>
     body {
       font-family: 'Metropolis';
@@ -17,21 +19,63 @@
 
 <body>
   <div class="parent">
-    <section id="section0">
+    <nav id="cd-vertical-nav">
+      <ul>
+        <li>
+          <a href="#section1" data-number="1">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Início</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section2" data-number="2">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Ameaças</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section3" data-number="3">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Ameaças em pormenor</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section4" data-number="4">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Como Ajudar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section5" data-number="5">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Conhece as tartarugas</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section6" data-number="6">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Projetos próximos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+    <section id="section1" class="cd-section">
 
       <div class="container" id="smallcontainer">
         <div class="item" id="logo">
           <img id="logoimg" src="./assets/Group 1.svg" />
         </div>
 
-        <a href="#section1" class="item" id="botaodown">
+        <a href="#section2" class="item" id="botaodown">
           <img id="moveTo" src="./assets/Group 5.svg" />
         </a>
       </div>
 
     </section>
 
-    <section id="section1">
+    <section id="section2" class="cd-section">
       <div id="slider">
         <div class="slide active">
 
@@ -107,7 +151,7 @@
 
     </section>
 
-    <section id="section2">
+    <section id="section3" class="cd-section">
       <div id="tituloAfeta">O que nos prejudica.</div>
       <div class="container" id="afetaContainer">
         <div class="container" id="colunaAfeta1">
@@ -118,8 +162,8 @@
               <h3>Captura acidental em redes de pesca.</h3>
             </div>
             <h4> Todos os anos, centenas de milhares de tartarugas marinhas são capturadas acidentalmente em redes de
-              pesca, dedicadas à pesca de outros animais.<h4>
-                </h3>
+              pesca, dedicadas à pesca de outros animais.</h4>
+
           </div>
           <div class="itemAfeta" id="aquecimentoGlobal">
             <img class="imgAfeta" id="aquecimentoImg" src="./assets/aquecimentoglobal.png" />
@@ -203,7 +247,7 @@
 
     </section>
 
-    <section id="section3">
+    <section id="section4" class="cd-section">
       <div class="container" id="dicasTituloContainer">
         <div id="tituloDicas">Cuida de nós.</div>
         <div id="textoDicas">Dicas simples que podes adotar nos teus dias e que
@@ -288,13 +332,248 @@
         Saber como foram capturados e escolher os que não prejudicam as tartarugas.</p>-->
     </section>
 
-    <section id="section4">
-      <span>4. Viewport height section</span>
-    </section>
-  </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <section id="section5" class="cd-section">
+      <div class="container" id="identidadeTituloContainer">
 
+        <div id="tituloAfeta">A nossa identidade.</div>
+      </div>
+      <div class="container" id="identidadeColumnContainer">
+        <div id="colunaIdentidade1">
+
+          <div id="textoIdentidade">Fica a conhecer melhor as espécies de tartarugas que podes encontrar em Portugal.
+          </div>
+          <div class="idListContainer Flipped">
+            <div class="identidadeList">
+              <div class="itemIdentidade" data-link="first">
+
+                <div class="itemCol">
+                  <img src="./assets/t1.svg" class="imgId" id="comumImg">
+
+                </div>
+                <div class="itemCol">
+                  <div class="nomeTurtle">Tartaruga Comum</div>
+                  <div class="nomeCientifico">Caretta Caretta </div>
+                </div>
+              </div>
+              <div class="itemIdentidade" data-link="second">
+
+                <div class="itemCol">
+                  <img src="./assets/t1.svg" class="imgId" data-link="second">
+
+                </div>
+                <div class="itemCol">
+                  <div class="nomeTurtle">Tartaruga Verde</div>
+                  <div class="nomeCientifico">Chelonia mydas</div>
+                </div>
+              </div>
+              <div class="itemIdentidade" data-link="third">
+                <div class="itemCol">
+                  <img src="./assets/t1.svg" class="imgId">
+
+                </div>
+                <div class="itemCol">
+                  <div class="nomeTurtle">Tartaruga de Couro</div>
+                  <div class="nomeCientifico">Dermochelys coriacea </div>
+                </div>
+              </div>
+              <div class="itemIdentidade" data-link="fourth">
+                <div class="itemCol">
+                  <img src="./assets/t1.svg" class="imgId">
+
+                </div>
+                <div class="itemCol">
+                  <div class="nomeTurtle">Tartaruga de Escamas </div>
+                  <div class="nomeCientifico">Eretmochelys imbricata</div>
+                </div>
+              </div>
+              <div class="itemIdentidade" data-link="fifth">
+                <div class="itemCol">
+                  <img src="./assets/t1.svg" class="imgId">
+
+                </div>
+                <div class="itemCol">
+                  <div class="nomeTurtle">Tartaruga de Kemp </div>
+                  <div class="nomeCientifico">Lepidochelys kempii </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="colunaIdentidade2">
+
+          <div class="infoDiv" id="turtleComumInfo" data-link="first">
+
+            <img src="./assets/t2.svg" class="bigImgId">
+            <div class="nomeTurtleInfo">Tartaruga Comum</div>
+            <div class="nomeCientificoInfo">Caretta Caretta</div>
+            <div class="infoTurtle">Habitantes dos oceanos Índico, Pacífico, Atlântico e mar Mediterrâneo, apenas
+              encontradas em terra quando desovam. Usam as suas mandíbulas poderosas para uma alimentação omnívora e
+              vivem entre os 47 e 67 anos.</div>
+
+            <div class="colunasInfoDiv">
+              <img id="tintagrande" src="./assets/tintagrande.svg" />
+              <div class="infoGrid">
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Tamanho</div>
+                  <div class="textoInfoGridItem">70cm a 90cm </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Peso</div>
+                  <div class="textoInfoGridItem">80kg a 200kg </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Risco</div>
+                  <div class="textoInfoGridItem">Vulnerável </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Ameaças</div>
+                  <div class="textoInfoGridItem">Caça Furtiva<br>Pilhagem de ovos<br>Equipamento de pesca à deriva
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="infoDiv" id="turtleComumInfo" data-link="second">
+
+            <img src="./assets/t2.svg" class="bigImgId">
+            <div class="nomeTurtleInfo">Tartaruga Verde</div>
+            <div class="nomeCientificoInfo">Chelonia mydas</div>
+            <div class="infoTurtle">Encontradas no Pacífico, Atlântico e Índico, receberam o seu nome da sua barriga
+              verde. Vivem em lagunas e alimentam-se de invertebrados em jovens e de ervas marinhas em adultas. Migram
+              os oceanos durante cerca de 80 anos.</div>
+
+            <div class="colunasInfoDiv">
+              <img id="tintagrande" src="./assets/tintagrande.svg" />
+              <div class="infoGrid">
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Tamanho</div>
+                  <div class="textoInfoGridItem">150cm</div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Peso</div>
+                  <div class="textoInfoGridItem">68kg a 190kg </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Risco</div>
+                  <div class="textoInfoGridItem">Ameaçada </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Ameaças</div>
+                  <div class="textoInfoGridItem">Colisões com barcos<br>Pesca acidental<br>Caça furtiva<br>Pilhagem de
+                    ovos
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="infoDiv" id="turtleComumInfo" data-link="third">
+
+            <img src="./assets/t2.svg" class="bigImgId">
+            <div class="nomeTurtleInfo">Tartaruga de Couro</div>
+            <div class="nomeCientificoInfo">Dermochelys coriacea</div>
+            <div class="infoTurtle">A maior de todas as tartarugas habita quase todas as regiões subtropicais e
+              tropicais do planeta, maioritariamente no Atlântico, Pacífcio Ocidental e Oriental. O nome advém da sua
+              carapaça.</div>
+
+            <div class="colunasInfoDiv">
+              <img id="tintagrande" src="./assets/tintagrande.svg" />
+              <div class="infoGrid">
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Tamanho</div>
+                  <div class="textoInfoGridItem">200cm </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Peso</div>
+                  <div class="textoInfoGridItem">500kg </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Risco</div>
+                  <div class="textoInfoGridItem">Vulnerável </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Ameaças</div>
+                  <div class="textoInfoGridItem">Poluição luminosa<br>Pesca acidental<br>Pilhagem de ovos
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="infoDiv" id="turtleComumInfo" data-link="fourth">
+
+            <img src="./assets/t2.svg" class="bigImgId">
+            <div class="nomeTurtleInfo">Tartaruga de Escamas</div>
+            <div class="nomeCientificoInfo">Eretmochelys imbricata</div>
+            <div class="infoTurtle">Uma das tartarugas mais ameaçadas; chama aos recifes de coral e lagoas a sua casa.
+              Possui um bico, que usa para alcançar alimento em fendas, dando-lhe o nome “Hawksbill sea turtle”.</div>
+
+            <div class="colunasInfoDiv">
+              <img id="tintagrande" src="./assets/tintagrande.svg" />
+              <div class="infoGrid">
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Tamanho</div>
+                  <div class="textoInfoGridItem">60cm a 100cm</div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Peso</div>
+                  <div class="textoInfoGridItem">73kg a 100kg </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Risco</div>
+                  <div class="textoInfoGridItem">Criticamente em perigo </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Ameaças</div>
+                  <div class="textoInfoGridItem">Caça furtiva
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="infoDiv" id="turtleComumInfo" data-link="fifth">
+
+            <img src="./assets/t2.svg" class="bigImgId">
+            <div id="nomeTurtleInfo" class="nomeTurtleInfo">Tartaruga de Kemp</div>
+            <div class="nomeCientificoInfo">Lepidochelys kempii </div>
+            <div class="infoTurtle">A mais rara de todas as espécies de tartaruga marinha. Apresenta uma tonalidade
+              púrpura enquanto jovem e vai adquirindo um tom mais esbranquiçado e amarelado ao envelhecer. Vive quase
+              exclusivamente no ocenao Atlântico.</div>
+
+            <div class="colunasInfoDiv">
+              <img id="tintagrande" src="./assets/tintagrande.svg" />
+              <div class="infoGrid">
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Tamanho</div>
+                  <div class="textoInfoGridItem">58cm a 70cm </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Peso</div>
+                  <div class="textoInfoGridItem">36kg a 45kg </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Risco</div>
+                  <div class="textoInfoGridItem">Criticamente em perigo </div>
+                </div>
+                <div class="infoGridItem">
+                  <div class="tituloInfoGridItem">Ameaças</div>
+                  <div class="textoInfoGridItem">Destruição de habitat<br>Poluição<br>Pesca acidental
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+  </div>
+  </section>
+  <section id="section6" class="cd-section">
+    <span>4. Viewport height section</span>
+  </section>
+  </div>
+  </div>
+  <script src="js/jquery-2.1.1.js"></script>
 
   <script src="js/index.js"></script>
 

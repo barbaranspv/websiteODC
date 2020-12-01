@@ -22,3 +22,69 @@ $('#leftarrow').click(function () {
         $('.slide').last().fadeIn(800).addClass('active');
     }
 });
+
+
+jQuery(document).ready(function ($) {
+    var contentSections = $('.cd-section'),
+        navigationItems = $('#cd-vertical-nav a');
+
+    updateNavigation();
+    $('.parent').on('scroll', function () {
+        updateNavigation();
+    });
+
+    function updateNavigation() {
+        contentSections.each(function () {
+            $this = $(this);
+            var activeSection = $('#cd-vertical-nav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
+            if (($this.offset().top - $(window).height() / 2 < $(window).scrollTop()) && ($this.offset().top + $this.height() - $(window).height() / 2 > $(window).scrollTop())) {
+                navigationItems.eq(activeSection).addClass('is-selected');
+            } else {
+                navigationItems.eq(activeSection).removeClass('is-selected');
+            }
+        });
+    }
+
+
+});
+
+
+
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+/*$(document).ready(function () {
+    $("#comumImg").click(function () {
+        $("#turtleComumInfo").toggle();
+    });
+});
+*/
+
+$('.infoDiv').hide();
+$('.infoDiv[data-link=' + 'first' + ']').fadeIn({
+
+}, 0);
+
+
+
+$('.itemIdentidade').click(function () {
+    $('.infoDiv').hide();
+    $('.infoDiv[data-link=' + $(this).attr('data-link') + ']').fadeIn({}, 300);
+    console.log($(this).children("div.nomeTurtle"));
+    $('.itemIdentidade').find("div.nomeTurtle").css("color", "#282828");
+    $('.itemIdentidade').find("div.nomeCientifico").css("color", "#282828");
+
+    $('.itemIdentidade[data-link=' + $(this).attr('data-link') + ']').find("div.nomeTurtle").css("color", "#84D8C8");
+    $('.itemIdentidade[data-link=' + $(this).attr('data-link') + ']').find("div.nomeCientifico").css("color", "#84D8C8");
+});
