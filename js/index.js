@@ -75,6 +75,8 @@ $('.infoDiv').hide();
 $('.infoDiv[data-link=' + 'first' + ']').fadeIn({
 
 }, 0);
+$('.itemIdentidade[data-link=first]').find("div.nomeTurtle").css("color", "#84D8C8");
+$('.itemIdentidade[data-link=first]').find("div.nomeCientifico").css("color", "#84D8C8");
 
 
 
