@@ -75,12 +75,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-/*$(document).ready(function () {
-    $("#comumImg").click(function () {
-        $("#turtleComumInfo").toggle();
-    });
-});
-*/
+
 
 $('.infoDiv').hide();
 $('.infoDiv[data-link=' + 'first' + ']').fadeIn({

@@ -5,16 +5,21 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width," width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable="no">
   <title>turtle.</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flickity.css">
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/flickity.pkgd.js"></script> <!-- Modernizr -->
   <style>
     body {
       font-family: 'Metropolis';
     }
   </style>
+
+  <link rel="icon" type="image/ico" href="assets/turtle.ico" />
 </head>
 
 <body>
@@ -63,15 +68,13 @@
 
     <section id="section1" class="cd-section">
 
-      <div class="container" id="smallcontainer">
-        <div class="item" id="logo">
-          <img id="logoimg" src="./assets/Group 1.svg" />
-        </div>
-
-        <a href="#section2" class="item" id="botaodown">
-          <img id="moveTo" src="./assets/Group 5.svg" />
-        </a>
+      <div class="item" id="logo">
+        <img id="logoimg" src="./assets/Group 1.svg" />
       </div>
+
+      <a href="#section2" class="item" id="botaodown">
+        <img id="moveTo" src="./assets/Group 5.svg" />
+      </a>
 
     </section>
 
@@ -568,7 +571,114 @@
                         Saber como foram capturados e escolher os que não prejudicam as tartarugas.</p>-->
     </section>
     <section id="section6" class="cd-section">
-      <span>4. Viewport height section</span>
+      <div id="tituloProjetos">Colabora com os projetos que nos protegem.</div>
+      <div class="gallery js-flickity" id="projetosContainer" data-flickity-options='{ "freeScroll": true }'>
+        <div class="gallery-cell">
+          <div class="projetosDiv">
+            <div id="colunaProjetos1">
+              <div id="tituloProjeto">Programa Tatô — Oceanário de Lisboa</div>
+              <div id="textoProjeto">Incialmente um projeto, tornou-se em 2018 uma ONG internacional, contando agora com
+                inúmeras associações nacionais e internacionais a seu lado, sendo uma delas o Oceanário de Lisboa.
+                <br> A sua estratégia passa por monitorizar e proteger as tartarugas marinhas, tal como sensibilizar,
+                educar e
+                envolver as comunidades locais nos seus esforços.
+              </div>
+              <div id="textoProjeto">Formas de contribuir e apoiar</div>
+              <div id="formasContribuir">Donativos.
+                <br>Voluntariado.
+                <br>Turismo sustentável/Turtle watching.</div>
+
+            </div>
+            <div id="colunaProjetos2">
+              <img class="imgProjetos" src="./assets/tatosvg.svg" />
+              <a href="">
+                <img id="visitarBotao" src="./assets/visitarbotao.svg" />
+              </a>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="projetosDiv">
+            <div id="colunaProjetos1">
+              <div id="tituloProjeto">Projeto Costa — Consolidating Sea Turtle Conservation in the Azores</div>
+              <div id="textoProjeto">O objetivo deste projeto, criado nos Açores, é a conservação das tartarugas
+                marinhas,
+                através da preservação do seu habitat no oceano Atlântico.
+                <br>Isto é feito através da recolha de dados sobre capturas acidentais, recolha de dados biológicos e
+                demográficos, ensinar boas práticas de manuseamento para os pescadores e educar e envolver as
+                comunidades
+                locais e turistas para ações de conservação da espécie.
+              </div>
+
+
+            </div>
+            <div id="colunaProjetos2">
+              <img id="costaImg" src="./assets/costapng.png" />
+              <a href="https://student.dei.uc.pt/~bvieira/turtle./">
+                <img id="visitarBotao" src="./assets/visitarbotao.svg" />
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="projetosDiv">
+            <div id="colunaProjetos1">
+              <div id="tituloProjeto">Marine Megafauna Foundation — Zoomarine</div>
+              <div id="textoProjeto">Esta fundação tem como objetico a proteção da fauna marinha do nosso planeta; desde
+                pesquisa pioneira, educação e soluções de conservação sustentáveis, a Marine Megafauna Foundation
+                pretende
+                criar um mundo onde a vida marinha e os seres humanos possam prosperar juntos.
+
+              </div>
+              <div id="textoProjeto">Formas de contribuir e apoiar</div>
+              <div id="formasContribuir">Donativos.
+                <br>Comprar itens da fundação nas lojas Zoomarine.
+                <br>Visitar o Zoomarine — Parte dos custos revertem para a fundação.</div>
+
+            </div>
+            <div id="colunaProjetos2">
+              <img class="imgProjetos" src="./assets/submarinesvg.svg" />
+              <a href="">
+                <img id="visitarBotao" src="./assets/visitarbotao.svg" />
+              </a>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="projetosDiv">
+            <div id="colunaProjetos1">
+              <div id="tituloProjeto">Projeto TAMAR — Brasil (Protocolos com Zoomarine)
+              </div>
+              <div id="textoProjeto">O projeto TAMAR começou como uma iniciativa para a conservação de espécies de
+                tartarugas marinhas encontradas no litoral brasileiro; com 24 bases espalhadas pelo litoral brasileiro,
+                a
+                fundação realiza conservação e pesquisa aplicada de tartarugas como também a educação ambiental das
+                populações e o seu desenvolvimento sustentável, alternativo à caça destas espécies.
+              </div>
+            </div>
+
+            <div id="colunaProjetos2">
+              <img class="imgProjetos" src="./assets/tamarsvg.svg" />
+              <a href="">
+                <img id="visitarBotao" src="./assets/visitarbotao.svg" />
+              </a>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </section>
   </div>
   </div>
