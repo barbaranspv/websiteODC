@@ -1,0 +1,53 @@
+Date : 2020-12-03 00:43:20
+Directory : c:\Users\barba\Desktop\website_ODC
+Total : 23 files,  12656 codes, 3215 comments, 3028 blanks, all 18899 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          5 |     10,310 |      3,124 |      2,751 |     16,185 |
+| CSS        |          3 |      1,182 |         88 |        198 |      1,468 |
+| HTML       |          1 |        626 |          2 |         65 |        693 |
+| XML        |         14 |        538 |          1 |         14 |        553 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                             |         23 |     12,656 |      3,215 |      3,028 |     18,899 |
+| assets                                                        |         14 |        538 |          1 |         14 |        553 |
+| css                                                           |          3 |      1,182 |         88 |        198 |      1,468 |
+| js                                                            |          5 |     10,310 |      3,124 |      2,751 |     16,185 |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                      | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\barba\Desktop\website_ODC\assets\Group 1.svg         | XML        |         23 |          0 |          1 |         24 |
+| c:\Users\barba\Desktop\website_ODC\assets\Group 5.svg         | XML        |         29 |          0 |          1 |         30 |
+| c:\Users\barba\Desktop\website_ODC\assets\cd-arrow-bottom.svg | XML        |         12 |          1 |          1 |         14 |
+| c:\Users\barba\Desktop\website_ODC\assets\costasvg.svg        | XML        |         20 |          0 |          1 |         21 |
+| c:\Users\barba\Desktop\website_ODC\assets\leftarrow.svg       | XML        |         22 |          0 |          1 |         23 |
+| c:\Users\barba\Desktop\website_ODC\assets\projetoscard.svg    | XML        |         84 |          0 |          1 |         85 |
+| c:\Users\barba\Desktop\website_ODC\assets\rightarrow.svg      | XML        |         22 |          0 |          1 |         23 |
+| c:\Users\barba\Desktop\website_ODC\assets\submarinesvg.svg    | XML        |         20 |          0 |          1 |         21 |
+| c:\Users\barba\Desktop\website_ODC\assets\t1.svg              | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\barba\Desktop\website_ODC\assets\t2.svg              | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\barba\Desktop\website_ODC\assets\tamarsvg.svg        | XML        |         20 |          0 |          1 |         21 |
+| c:\Users\barba\Desktop\website_ODC\assets\tatosvg.svg         | XML        |         20 |          0 |          1 |         21 |
+| c:\Users\barba\Desktop\website_ODC\assets\tintagrande.svg     | XML        |        256 |          0 |          1 |        257 |
+| c:\Users\barba\Desktop\website_ODC\assets\visitarbotao.svg    | XML        |          4 |          0 |          1 |          5 |
+| c:\Users\barba\Desktop\website_ODC\css\flickity.css           | CSS        |        117 |         13 |         28 |        158 |
+| c:\Users\barba\Desktop\website_ODC\css\main.css               | CSS        |        823 |         56 |        133 |      1,012 |
+| c:\Users\barba\Desktop\website_ODC\css\style.css              | CSS        |        242 |         19 |         37 |        298 |
+| c:\Users\barba\Desktop\website_ODC\index.html                 | HTML       |        626 |          2 |         65 |        693 |
+| c:\Users\barba\Desktop\website_ODC\js\flickity.pkgd.js        | JavaScript |      3,183 |      1,089 |        825 |      5,097 |
+| c:\Users\barba\Desktop\website_ODC\js\index.js                | JavaScript |         76 |          2 |         41 |        119 |
+| c:\Users\barba\Desktop\website_ODC\js\jquery-2.1.1.js         | JavaScript |      6,167 |      1,488 |      1,536 |      9,191 |
+| c:\Users\barba\Desktop\website_ODC\js\jquery.flip.js          | JavaScript |        275 |         35 |         61 |        371 |
+| c:\Users\barba\Desktop\website_ODC\js\modernizr.js            | JavaScript |        609 |        510 |        288 |      1,407 |
+| Total                                                         |            |     12,656 |      3,215 |      3,028 |     18,899 |
++---------------------------------------------------------------+------------+------------+------------+------------+------------+

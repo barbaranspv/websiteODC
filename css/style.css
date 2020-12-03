@@ -58,6 +58,7 @@ Main components
 }
 
 .no-touch #cd-vertical-nav {
+  z-index: 1;
   position: fixed;
   right: 40px;
   top: 50%;
@@ -68,7 +69,6 @@ Main components
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
 }
 
 .no-touch #cd-vertical-nav li {

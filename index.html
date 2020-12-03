@@ -24,6 +24,9 @@
 
 <body>
   <div class="parent">
+    <div class="navbar">
+      <img id="logocanto" src="./assets/logocanto.svg" />
+    </div>
     <nav id="cd-vertical-nav">
       <ul>
         <li>
@@ -35,29 +38,35 @@
         <li>
           <a href="#section2" data-number="2">
             <span class="cd-dot"></span>
-            <span class="cd-label">Ameaças</span>
+            <span class="cd-label">Apresentação</span>
           </a>
         </li>
         <li>
           <a href="#section3" data-number="3">
             <span class="cd-dot"></span>
-            <span class="cd-label">Ameaças em pormenor</span>
+            <span class="cd-label">Ameaças</span>
           </a>
         </li>
         <li>
           <a href="#section4" data-number="4">
             <span class="cd-dot"></span>
-            <span class="cd-label">Conhece as tartarugas</span>
+            <span class="cd-label">Ameaças em pormenor</span>
           </a>
         </li>
         <li>
           <a href="#section5" data-number="5">
             <span class="cd-dot"></span>
-            <span class="cd-label">Como Ajudar</span>
+            <span class="cd-label">Conhece as tartarugas</span>
           </a>
         </li>
         <li>
           <a href="#section6" data-number="6">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Como Ajudar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#section7" data-number="7">
             <span class="cd-dot"></span>
             <span class="cd-label">Projetos próximos</span>
           </a>
@@ -65,7 +74,6 @@
       </ul>
     </nav>
     <a class="cd-nav-trigger cd-img-replace"><span></span></a>
-
     <section id="section1" class="cd-section">
 
       <div class="item" id="logo">
@@ -79,6 +87,27 @@
     </section>
 
     <section id="section2" class="cd-section">
+      <div class="colunaApresentacao" id="colunaApresentacao1">
+        <p class="textoApresentacao">Olá, sou a turtle.</p>
+        <p class="textoApresentacao">A nossa espécie <br> está em perigo.</p>
+        <p class="textoApresentacao">A nossa comida, <br> o nosso lar <br> e as nossas crias sofrem cada vez mais.</p>
+        <p class="textoApresentacao">Vem descobrir
+          <br> o que nos afeta
+          <br>e como nos podes ajudar.</p>
+
+      </div>
+      <div class="colunaApresentacao" id="colunaApresentacao2">
+        <img class="slideturtleApresentacao" src="./assets/turtlealgitransparent.svg" /></div>
+
+
+
+
+
+
+    </section>
+
+
+    <section id="section3" class="cd-section">
       <div id="slider">
         <div class="slide active">
 
@@ -154,7 +183,7 @@
 
     </section>
 
-    <section id="section3" class="cd-section">
+    <section id="section4" class="cd-section">
       <div id="tituloAfeta">O que nos prejudica.</div>
       <div class="container" id="afetaContainer">
         <div class="container" id="colunaAfeta1">
@@ -251,10 +280,10 @@
     </section>
 
 
-    <section id="section4" class="cd-section">
+    <section id="section5" class="cd-section">
       <div class="container" id="identidadeTituloContainer">
 
-        <div id="tituloAfeta">A nossa identidade.</div>
+        <div id="tituloAfeta">Conhece-nos melhor.</div>
       </div>
       <div class="container" id="identidadeColumnContainer">
         <div id="colunaIdentidade1">
@@ -486,7 +515,7 @@
       </div>
 
     </section>
-    <section id="section5" class="cd-section">
+    <section id="section6" class="cd-section">
       <div class="container" id="dicasTituloContainer">
         <div id="tituloDicas">Cuida de nós.</div>
         <div id="textoDicas">Dicas simples que podes adotar nos teus dias e que
@@ -570,7 +599,7 @@
       <!--<p class="textoGrid">Consumir frutos do mar de forma consciente.
                         Saber como foram capturados e escolher os que não prejudicam as tartarugas.</p>-->
     </section>
-    <section id="section6" class="cd-section">
+    <section id="section7" class="cd-section">
       <div id="tituloProjetos">Colabora com os projetos que nos protegem.</div>
       <div class="gallery js-flickity" id="projetosContainer" data-flickity-options='{ "freeScroll": true }'>
         <div class="gallery-cell">
@@ -578,16 +607,17 @@
             <div id="colunaProjetos1">
               <div id="tituloProjeto">Programa Tatô — Oceanário de Lisboa</div>
               <div id="textoProjeto">Incialmente um projeto, tornou-se em 2018 uma ONG internacional, contando agora com
-                inúmeras associações nacionais e internacionais a seu lado, sendo uma delas o Oceanário de Lisboa.
+                inúmeras associações nacionais e internacionais a seu lado, sendo uma delas <br>o Oceanário de Lisboa.
                 <br> A sua estratégia passa por monitorizar e proteger as tartarugas marinhas, tal como sensibilizar,
-                educar e
+                educar<br> e
                 envolver as comunidades locais nos seus esforços.
               </div>
-              <div id="textoProjeto">Formas de contribuir e apoiar</div>
-              <div id="formasContribuir">Donativos.
-                <br>Voluntariado.
-                <br>Turismo sustentável/Turtle watching.</div>
-
+              <div class="containerContribuir">
+                <div id="textoProjeto">Formas de contribuir e apoiar</div>
+                <div id="formasContribuir">Donativos.
+                  <br>Voluntariado.
+                  <br>Turismo sustentável/Turtle watching.</div>
+              </div>
             </div>
             <div id="colunaProjetos2">
               <img class="imgProjetos" src="./assets/tatosvg.svg" />
@@ -604,11 +634,11 @@
           <div class="projetosDiv">
             <div id="colunaProjetos1">
               <div id="tituloProjeto">Projeto Costa — Consolidating Sea Turtle Conservation in the Azores</div>
-              <div id="textoProjeto">O objetivo deste projeto, criado nos Açores, é a conservação das tartarugas
+              <div id="textoProjeto">O objetivo deste projeto, criado nos Açores, <br>é a conservação das tartarugas
                 marinhas,
-                através da preservação do seu habitat no oceano Atlântico.
+                <br>através da preservação do seu habitat no oceano Atlântico.
                 <br>Isto é feito através da recolha de dados sobre capturas acidentais, recolha de dados biológicos e
-                demográficos, ensinar boas práticas de manuseamento para os pescadores e educar e envolver as
+                demográficos, ensinar boas práticas de manuseamento <br>para os pescadores e educar e envolver as
                 comunidades
                 locais e turistas para ações de conservação da espécie.
               </div>
@@ -635,11 +665,13 @@
                 criar um mundo onde a vida marinha e os seres humanos possam prosperar juntos.
 
               </div>
-              <div id="textoProjeto">Formas de contribuir e apoiar</div>
-              <div id="formasContribuir">Donativos.
-                <br>Comprar itens da fundação nas lojas Zoomarine.
-                <br>Visitar o Zoomarine — Parte dos custos revertem para a fundação.</div>
+              <div class="containerContribuir">
+                <div id="textoProjeto">Formas de contribuir e apoiar</div>
+                <div id="formasContribuir">Donativos.
+                  <br>Comprar itens da fundação nas lojas Zoomarine.
+                  <br>Visitar o Zoomarine — Parte dos custos revertem para a fundação.</div>
 
+              </div>
             </div>
             <div id="colunaProjetos2">
               <img class="imgProjetos" src="./assets/submarinesvg.svg" />
@@ -657,10 +689,10 @@
             <div id="colunaProjetos1">
               <div id="tituloProjeto">Projeto TAMAR — Brasil (Protocolos com Zoomarine)
               </div>
-              <div id="textoProjeto">O projeto TAMAR começou como uma iniciativa para a conservação de espécies de
+              <div id="textoProjeto">O projeto TAMAR começou como uma iniciativa para<br> a conservação de espécies de
                 tartarugas marinhas encontradas no litoral brasileiro; com 24 bases espalhadas pelo litoral brasileiro,
                 a
-                fundação realiza conservação e pesquisa aplicada de tartarugas como também a educação ambiental das
+                fundação realiza conservação <br>e pesquisa aplicada de tartarugas como também a educação ambiental das
                 populações e o seu desenvolvimento sustentável, alternativo à caça destas espécies.
               </div>
             </div>
@@ -683,6 +715,8 @@
   </div>
   </div>
   <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/jquery.flip.js"></script> <!-- Modernizr -->
+
 
   <script src="js/index.js"></script>
 
