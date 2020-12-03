@@ -11,6 +11,7 @@ $('#rightarrow').click(function () {
 });
 
 
+
 $('#leftarrow').click(function () {
     var currentSlide = $('.slide.active');
     var prevSlide = currentSlide.prev();
@@ -22,6 +23,33 @@ $('#leftarrow').click(function () {
         $('.slide').last().fadeIn(800).addClass('active');
     }
 });
+
+
+$('#leftarrowId').click(function () {
+    var currentSlideInfo = $('.slideInfo.active');
+    var prevSlideInfo = currentSlideInfo.prev();
+
+    currentSlideInfo.fadeOut(300).removeClass('active');
+    prevSlideInfo.fadeIn(800).addClass('active');
+
+    if (prevSlideInfo.length == 0) {
+        $('.slideInfo').last().fadeIn(800).addClass('active');
+    }
+});
+
+$('#rightarrowId').click(function () {
+    var currentSlideInfo = $('.slideInfo.active');
+    var nextSlideInfo = currentSlideInfo.next();
+
+    currentSlideInfo.fadeOut(300).removeClass('active');
+    nextSlideInfo.fadeIn(800).addClass('active');
+
+    if (nextSlideInfo.length == 0) {
+        $('.slideInfo').first().fadeIn(800).addClass('active');
+    }
+});
+
+
 
 
 jQuery(document).ready(function ($) {
@@ -97,7 +125,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-
+/*
 
 $('.infoDiv').hide();
 $('.infoDiv[data-link=' + 'first' + ']').fadeIn({
@@ -119,7 +147,7 @@ $('.itemIdentidade').click(function () {
     $('.itemIdentidade[data-link=' + $(this).attr('data-link') + ']').find("div.nomeCientifico").css("color", "#84D8C8");
 });
 
-
+*/
 
 
 $(".flip-card-inner").mouseenter(function (e) {

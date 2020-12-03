@@ -141,7 +141,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 110vh;
+  height: 105vh;
   background: #282828;
   /* scroll-snap-align: start;
   /* latest (Chrome 69+) */
@@ -170,6 +170,7 @@ section {
 
 .slideturtleApresentacao {
   width: 30vw;
+  margin-bottom: 10vh;
 }
 
 /*---------------------------------------------------------------------SECÇÃO 3 - SLIDES AFETA------------------------------------------------------------------*/
@@ -251,7 +252,7 @@ h1 {
 /*--------------------------------------------------------------SECÇÃO 3 - INFORMAÇÃO AFETA-----------------------------------------------------------------*/
 
 #section4 {
-  height: 3400px;
+  height: auto;
   background: #ffffff;
   /*scroll-snap-align: start;
   /* latest (Chrome 69+) */
@@ -340,7 +341,7 @@ h3 {
 h4 {
   font-family: 'Metropolis-ExtraLight';
   line-height: 1.2;
-  font-size: 16px;
+  font-size: 15px;
   color: #282828;
   font-weight: lighter;
   width: 384px;
@@ -351,6 +352,7 @@ h4 {
   padding-top: 64px;
   margin: 0px;
   width: 50%;
+  margin-bottom: 124px
 }
 
 #colunaAfeta2 {
@@ -440,7 +442,9 @@ h4 {
 /*-------------------------------------------------------------------------SECÇÃO 3 - DICAS------------------------------------------------------------------*/
 
 #section5 {
-  height: auto;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
   /*900px;*/
   background: #ffffff;
   /*scroll-snap-align: start;
@@ -452,82 +456,67 @@ h4 {
   font-size: 24px;
   font-family: 'Metropolis-ExtraLight';
   padding-top: 64px;
+  margin-left: 6vw;
   width: 40vw;
 }
 
-#identidadeTituloContainer {
-  width: 100%;
+#tituloIdentidade {
+  font-family: 'Metropolis-Bold';
+  color: #84D8C8;
+  font-size: 45px;
+  font-weight: bold;
+  padding-left: 6vw;
+  padding-top: 6vh;
 }
 
 #colunaIdentidade1 {
-  width: 50vw;
+  width: 38%;
   display: block;
   float: right;
-  padding-left: 7vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding-top: 9vh;
 }
 
 #colunaIdentidade2 {
-  width: 50vw;
+  width: 50%;
   display: block;
   float: right;
-  padding-top: 64px;
+  padding-top: 9vh;
 }
 
 .infoDiv {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
-.idListContainer {
-  overflow-y: auto;
-  margin-top: 99px;
-  height: 385px;
+#sliderInfo {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.identidadeList {
-  display: flex;
-  flex-direction: column;
-  padding-left: 24px;
-  height: 385px;
-  direction: ltr;
+.slideInfo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-content: center;
+  justify-content: center;
 }
 
-/*This cause the division content 
-        to be displayed from right to left */
-
-.Flipped {
-  direction: rtl;
-}
-
-/* Designing for scroll-bar */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-
-::-webkit-scrollbar-track {
-  background: #E1F5F1;
-  border-radius: 5px;
-}
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-  background: #84D8C8;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.slideInfo.active {
+  align-content: center;
+  justify-content: center;
+  display: block;
 }
 
 #identidadeColumnContainer {
   display: flex;
-  overflow-x: hidden;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
 }
 
 .itemCol {
@@ -566,7 +555,6 @@ h4 {
   font-family: 'Metropolis-Bold';
   font-size: 32px;
   color: #282828;
-  padding-top: 24px;
 }
 
 .nomeCientificoInfo {
@@ -587,15 +575,14 @@ h4 {
 }
 
 .bigImgId {
-  width: 464px;
-  height: 280px;
+  width: 100%;
 }
 
 .colunasInfoDiv {
   position: relative;
   display: inline;
   padding-top: 10px;
-  height: 270px;
+  height: auto;
   padding-bottom: 40px;
 }
 
@@ -631,6 +618,23 @@ h4 {
   padding-top: 6px;
   color: #282828;
   width: 144px;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 200px;
+}
+
+#leftarrowId {
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+#rightarrowId {
+  cursor: pointer;
+  padding-left: 20px;
 }
 
 /*-------------------------------------------------------------------------------SECÇÃO 5------------------------------------------------------------------*/
@@ -705,7 +709,7 @@ h4 {
 /*-----------------------------------------------------------------SECCÇÃO 6 - PROJETOS-----------------------------------------------------------------------*/
 
 #section7 {
-  height: 100vh;
+  height: auto;
   background-color: #282828;
   display: flex;
   flex-direction: column;
@@ -840,6 +844,51 @@ h4 {
   display: none;
 }
 
+/*----------------------------------------------------------FOOTER-------------------------------------->
+*/
+
+#footer {
+  height: auto;
+  background-color: #84D8C8;
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  width: 21vw;
+  margin: 8px;
+}
+
+#titulosFooter {
+  font-family: 'Metropolis-Bold';
+  font-size: 12px;
+}
+
+#textosFooter {
+  font-family: 'Metropolis-ExtraLight';
+  font-size: 14px;
+}
+
+#leftColumn, #centerColumn, #rightColumn {
+  margin: 78px;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+#footerTurtle {
+  float: right;
+}
+
+#disciplina {
+  margin-bottom: 23px;
+}
+
+#rightColumn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 /*-----------------------------------------------------------------RESPONSIVIDADE-----------------------------------------------------------------------*/
 
 @media screen and (max-width: 1360px) {
@@ -874,6 +923,10 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+  }
+  #colunaAfeta2 {
+    margin-bottom: 124px;
   }
   #section4 {
     height: auto;
@@ -883,6 +936,9 @@ h4 {
     grid-template-columns: repeat(3, 0.8fr);
     grid-template-rows: repeat(2, auto);
     row-gap: 20px;
+  }
+  .arrowContainer {
+    margin-bottom: 130px;
   }
 }
 
@@ -905,10 +961,6 @@ h4 {
   .slideturtle {
     width: 50vw;
     height: auto;
-  }
-  #colunaIdentidade1 {
-    width: 80%;
-    padding-left: 5vw;
   }
   #section7 {
     height: auto;
@@ -954,7 +1006,7 @@ h4 {
   }
   #colunaIdentidade1 {
     width: 100vw;
-    padding-left: 2vw;
+    margin-left: 2vw;
   }
   .idListContainer {
     align-items: center;
@@ -970,11 +1022,18 @@ h4 {
     height: auto;
   }
   #textoIdentidade {
-    width: 95vw;
+    width: 80vw;
+    margin-left: 2vw;
   }
   #colunaIdentidade2 {
     width: 100vw;
     padding-left: 2vw;
+  }
+  .bigImgId {
+    width: 80%;
+  }
+  #section5 {
+    height: 1200px;
   }
   .infoGrid {
     width: 90vw;
@@ -993,6 +1052,9 @@ h4 {
   }
   #formasContribuir {
     width: auto;
+  }
+  .arrowContainer {
+    margin-bottom: 80px;
   }
 }
 
@@ -1075,6 +1137,26 @@ h4 {
   .projetosDiv {
     height: 1200px;
   }
+  #footer {
+    flex-direction: column;
+  }
+  p {
+    width: 85vw;
+  }
+  #leftColumn {
+    margin-bottom: 0px;
+  }
+  #centerColumn {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  #rightColumn {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+  #realizacao {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 485px) {
@@ -1109,5 +1191,11 @@ h4 {
   }
   #colunaProjetos1 {
     padding-left: 0px;
+  }
+  .bigImgId {
+    width: 93vw;
+  }
+  #textoIdentidade {
+    width: 95vw;
   }
 }
