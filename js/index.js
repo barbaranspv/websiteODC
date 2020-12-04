@@ -1,3 +1,27 @@
+var previousScroll = 0;
+$('parent').scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll < 100) {
+        showTopNav();
+    } else if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
+        if (currentScroll > previousScroll) {
+            hideNav();
+        } else {
+            showNav();
+        }
+        previousScroll = currentScroll;
+    }
+});
+
+function hideNav() {
+    $(".navbar").removeClass("is-visible").addClass("is-hidden");
+}
+
+function showNav() {
+    $(".navbar").removeClass("is-hidden").addClass("is-visible");
+}
+
+
 $('#rightarrow').click(function () {
     var currentSlide = $('.slide.active');
     var nextSlide = currentSlide.next();
@@ -78,8 +102,13 @@ jQuery(document).ready(function ($) {
             var activeSection = $('#cd-vertical-nav a[href="#' + $this.attr('id') + '"]').data('number') - 1;
             if (($this.offset().top - $(window).height() / 2 < $(window).scrollTop()) && ($this.offset().top + $this.height() - $(window).height() / 2 > $(window).scrollTop())) {
                 navigationItems.eq(activeSection).addClass('is-selected');
-                console.log($this.attr('id'));
 
+                if ($("#section2").offset().top <= 0) {
+                    showNav();
+
+
+                } else
+                    hideNav();
             } else {
                 navigationItems.eq(activeSection).removeClass('is-selected');
             }
@@ -93,16 +122,17 @@ jQuery(document).ready(function ($) {
 
 
 
+
 (function () {
+    var textoIndex = -1;
 
     var textosApresentacao = $(".textoApresentacao");
-    var textoIndex = -1;
 
     function showNextTexto() {
         ++textoIndex;
         textosApresentacao.eq(textoIndex % textosApresentacao.length)
             .fadeIn(1000)
-            .delay(2600)
+            .delay(2200)
             .fadeOut(1000, showNextTexto);
     }
 
@@ -150,20 +180,46 @@ $('.itemIdentidade').click(function () {
 */
 
 
-$(".flip-card-inner").mouseenter(function (e) {
-    if ($(this).hasClass("active")) {
+$(document).ready(function () {
 
-    } else {
+    let is_mobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 
-        $(this).fadeIn(900).addClass('active');
-    }
-})
+
+    // now I can use is_mobile to run javascript conditionally
 
 
 
 
-$(".flip-card-inner").click(function (e) {
-    if ($(this).hasClass("active")) {
-        $(this).removeClass('active');
-    }
+    $(".flip-card-inner").mouseenter(function (e) {
+        if (is_mobile == false) {
+            if ($(this).hasClass("active")) {
+
+            } else {
+
+                $(this).fadeIn(900).addClass('active');
+            }
+        }
+    })
+
+
+
+
+
+
+    $(".flip-card-inner").click(function (e) {
+        console.log("k1");
+
+        if (is_mobile == true) {
+            console.log("oi1");
+            if ($(this).hasClass("active")) {
+                $(this).removeClass('active');
+            } else
+                $(this).fadeIn(900).addClass('active');
+        } else {
+            if ($(this).hasClass("active")) {
+                $(this).removeClass('active');
+            }
+        }
+
+    });
 });

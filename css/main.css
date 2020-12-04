@@ -48,26 +48,21 @@ html, body {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  /*-ms-scroll-snap-type: mandatory;
-  /* IE/Edge 
-  -webkit-scroll-snap-type: mandatory;
-  /* Safari 
+  scroll-snap-type: y proximity;
+  -ms-scroll-snap-type: proximity;
+  -webkit-scroll-snap-type: proximity;
   -webkit-scroll-snap-destination: 0% 0%;
   -webkit-overflow-scrolling: touch;
-  /* important for iOS */
 }
 
 section {
   display: block;
   width: 100vw;
   color: white;
-  /*scroll-snap-align: start;
+  scroll-snap-align: start;
   scroll-snap-stop: always;
-  /* latest (Chrome 69+) 
   scroll-snap-coordinate: 0% 0%;
-  /* older (Firefox/IE) 
-  -webkit-scroll-snap-coordinate: 0% 0%;*/
+  -webkit-scroll-snap-coordinate: 0% 0%;
   /* older (Safari) */
 }
 
@@ -76,6 +71,16 @@ section {
   color: transparent;
   z-index: 1;
   width: 100vw;
+}
+
+.navbar.is-hidden {
+  opacity: 0;
+  transition: transform 0.6s, opacity 0.4s;
+}
+
+.navbar.is-visible {
+  opacity: 1;
+  transition: transform 0.6s, opacity 0.6s;
 }
 
 #logocanto {
@@ -103,14 +108,17 @@ section {
   height: 90vh;
 }
 
-#logoimg {
-  margin-top: 60px;
+img {
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+#logoimg {
+  margin-top: 60px;
 }
 
 #botaodown {
@@ -120,6 +128,10 @@ section {
 #moveTo {
   transform: translatey(0px);
   animation: float 1s ease-in-out infinite;
+}
+
+#moveTo:hover {
+  opacity: 0.5;
 }
 
 @keyframes float {
@@ -141,7 +153,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 105vh;
+  height: 110vh;
   background: #282828;
   /* scroll-snap-align: start;
   /* latest (Chrome 69+) */
@@ -180,7 +192,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 900px;
+  height: 100vh;
   background: #ffffff;
   /* scroll-snap-align: start;
   /* latest (Chrome 69+) */
@@ -196,7 +208,8 @@ section {
   text-align: left;
   font-size: 64px;
   display: flex;
-  height: 60vh;
+  align-items: center;
+  height: 100%;
 }
 
 h1 {
@@ -221,7 +234,7 @@ h1 {
 #slider {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 100%;
 }
 
 .slide {
@@ -242,6 +255,10 @@ h1 {
 #leftarrow {
   cursor: pointer;
   padding-right: 20px;
+}
+
+#leftarrow:hover, #rightarrow:hover {
+  opacity: 0.5;
 }
 
 #rightarrow {
@@ -267,7 +284,7 @@ h1 {
 #tituloAfeta {
   font-family: 'Metropolis-Bold';
   color: #84D8C8;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   padding-left: 88px;
   padding-top: 88px;
@@ -442,7 +459,7 @@ h4 {
 /*-------------------------------------------------------------------------SECÇÃO 3 - DICAS------------------------------------------------------------------*/
 
 #section5 {
-  height: 900px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   /*900px;*/
@@ -457,13 +474,13 @@ h4 {
   font-family: 'Metropolis-ExtraLight';
   padding-top: 64px;
   margin-left: 6vw;
-  width: 40vw;
+  width: 80vw;
 }
 
 #tituloIdentidade {
   font-family: 'Metropolis-Bold';
   color: #84D8C8;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   padding-left: 6vw;
   padding-top: 6vh;
@@ -623,8 +640,11 @@ h4 {
 .arrowContainer {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  width: 100%;
   margin-top: 2vh;
-  margin-bottom: 200px;
+  margin-bottom: 6vh;
+  z-index: 1;
 }
 
 #leftarrowId {
@@ -637,6 +657,10 @@ h4 {
   padding-left: 20px;
 }
 
+#leftarrowId:hover, #rightarrowId:hover {
+  opacity: 0.5;
+}
+
 /*-------------------------------------------------------------------------------SECÇÃO 5------------------------------------------------------------------*/
 
 #section6 {
@@ -647,7 +671,7 @@ h4 {
 }
 
 #tituloDicas {
-  color: #ffffff;
+  color: #84D8C8;
   font-size: 40px;
   font-family: 'Metropolis-Bold';
   padding-left: 88px;
@@ -660,7 +684,7 @@ h4 {
   font-family: 'Metropolis-ExtraLight';
   padding-left: 88px;
   padding-top: 64px;
-  width: 45%;
+  width: 90vw;
 }
 
 #dicasContainer {
@@ -718,7 +742,7 @@ h4 {
 #tituloProjetos {
   font-family: 'Metropolis-Bold';
   color: #84D8C8;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   padding-left: 88px;
   padding-top: 88px;
@@ -735,7 +759,7 @@ h4 {
 
 .gallery {
   padding-top: 84px;
-  padding-bottom: 118px;
+  padding-bottom: 155px;
   color: #282828;
   ;
   justify-content: center;
@@ -758,7 +782,7 @@ h4 {
   display: flex;
   flex-direction: column;
   height: 350px;
-  width: 61%;
+  width: 65%;
   padding-left: 48px;
 }
 
@@ -768,7 +792,7 @@ h4 {
   width: 250px;
   height: 350px;
   justify-content: flex-end;
-  margin-left: 90px;
+  margin-left: 50px;
   margin-right: 20px;
 }
 
@@ -784,7 +808,7 @@ h4 {
   color: #282828;
   padding-top: 24px;
   line-height: 120%;
-  width: 98%;
+  width: 90%;
   ;
 }
 
@@ -815,6 +839,10 @@ h4 {
   height: auto;
 }
 
+#visitarBotao:hover {
+  opacity: 0.7;
+}
+
 #costaImg {
   height: 250px;
   width: 250px;
@@ -829,7 +857,7 @@ h4 {
 }
 
 .flickity-page-dots {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .flickity-page-dots .dot {
@@ -904,9 +932,6 @@ p {
     padding-left: 8vw;
     padding-right: 8vw;
   }
-  #textoDicas {
-    width: 54%;
-  }
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
@@ -938,14 +963,10 @@ p {
     grid-template-rows: repeat(2, auto);
     row-gap: 20px;
   }
-  .arrowContainer {
-    margin-bottom: 130px;
-  }
 }
 
 @media screen and (max-width: 1055px) {
   #textoDicas {
-    width: 65%;
     padding-left: 44px;
   }
   #tituloDicas {
@@ -1023,7 +1044,7 @@ p {
     height: auto;
   }
   #textoIdentidade {
-    width: 80vw;
+    width: 95vw;
     margin-left: 2vw;
   }
   #colunaIdentidade2 {

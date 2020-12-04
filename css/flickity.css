@@ -123,6 +123,7 @@ http://flickity.metafizzy.co
 
 /* ---- page dots ---- */
 
+/*
 .flickity-page-dots {
     position: absolute;
     width: 100%;
@@ -132,7 +133,7 @@ http://flickity.metafizzy.co
     list-style: none;
     text-align: center;
     line-height: 1;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 
 .flickity-rtl .flickity-page-dots {
@@ -147,12 +148,13 @@ http://flickity.metafizzy.co
     background: #4bb4a1;
     border-radius: 50%;
     filter: alpha(opacity=25);
-    /* IE8 */
+    /* IE8 
     cursor: pointer;
 }
 
 .flickity-page-dots .dot.is-selected {
     filter: alpha(opacity=100);
-    /* IE8 */
+    /* IE8 
     opacity: 1;
 }
+*/

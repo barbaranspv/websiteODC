@@ -80,6 +80,7 @@ Main components
   /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  margin-top: 8px;
 }
 
 .no-touch #cd-vertical-nav a:after {
@@ -107,7 +108,7 @@ Main components
 }
 
 .no-touch #cd-vertical-nav a:hover .cd-label {
-  opacity: 1;
+  display: block;
 }
 
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
@@ -117,7 +118,6 @@ Main components
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-  top: 8px;
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -139,10 +139,10 @@ Main components
   color: #146b5b;
   font-size: 30px;
   font-size: 0.975rem;
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s;
-  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s, display 0.2s;
+  -moz-transition: -moz-transform 0.2s, display 0.2s;
+  transition: transform 0.2s, display 0.2s;
+  display: none;
   -webkit-transform-origin: 100% 50%;
   -moz-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
