@@ -22,7 +22,7 @@ function showNav() {
 }
 
 
-$('#rightarrow').click(function () {
+$('#right-arrow').click(function () {
     var currentSlide = $('.slide.active');
     var nextSlide = currentSlide.next();
 
@@ -36,7 +36,7 @@ $('#rightarrow').click(function () {
 
 
 
-$('#leftarrow').click(function () {
+$('#left-arrow').click(function () {
     var currentSlide = $('.slide.active');
     var prevSlide = currentSlide.prev();
 
@@ -49,27 +49,27 @@ $('#leftarrow').click(function () {
 });
 
 
-$('#leftarrowId').click(function () {
-    var currentSlideInfo = $('.slideInfo.active');
+$('#left-arrow-id').click(function () {
+    var currentSlideInfo = $('.slide-info.active');
     var prevSlideInfo = currentSlideInfo.prev();
 
     currentSlideInfo.fadeOut(300).removeClass('active');
     prevSlideInfo.fadeIn(800).addClass('active');
 
     if (prevSlideInfo.length == 0) {
-        $('.slideInfo').last().fadeIn(800).addClass('active');
+        $('.slide-info').last().fadeIn(800).addClass('active');
     }
 });
 
-$('#rightarrowId').click(function () {
-    var currentSlideInfo = $('.slideInfo.active');
+$('#right-arrow-id').click(function () {
+    var currentSlideInfo = $('.slide-info.active');
     var nextSlideInfo = currentSlideInfo.next();
 
     currentSlideInfo.fadeOut(300).removeClass('active');
     nextSlideInfo.fadeIn(800).addClass('active');
 
     if (nextSlideInfo.length == 0) {
-        $('.slideInfo').first().fadeIn(800).addClass('active');
+        $('.slide-info').first().fadeIn(800).addClass('active');
     }
 });
 
@@ -126,7 +126,7 @@ jQuery(document).ready(function ($) {
 (function () {
     var textoIndex = -1;
 
-    var textosApresentacao = $(".textoApresentacao");
+    var textosApresentacao = $(".texto-apresentacao");
 
     function showNextTexto() {
         ++textoIndex;
@@ -197,6 +197,7 @@ $(document).ready(function () {
             } else {
 
                 $(this).fadeIn(900).addClass('active');
+                $(this).css("cursor", "pointer");
             }
         }
     })
@@ -207,10 +208,8 @@ $(document).ready(function () {
 
 
     $(".flip-card-inner").click(function (e) {
-        console.log("k1");
 
         if (is_mobile == true) {
-            console.log("oi1");
             if ($(this).hasClass("active")) {
                 $(this).removeClass('active');
             } else
@@ -218,6 +217,7 @@ $(document).ready(function () {
         } else {
             if ($(this).hasClass("active")) {
                 $(this).removeClass('active');
+                $(this).css("cursor", "default");
             }
         }
 
