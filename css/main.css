@@ -53,6 +53,7 @@ html, body {
   -webkit-scroll-snap-type: proximity;
   -webkit-scroll-snap-destination: 0% 0%;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -180,6 +181,10 @@ img {
   color: white;
 }
 
+.slide-turtle-apresentacao {
+  margin-bottom: 10vh;
+}
+
 /*---------------------------------------------------------------------SECÇÃO 3 - SLIDES AFETA------------------------------------------------------------------*/
 
 #section3 {
@@ -225,9 +230,10 @@ h1 {
   justify-content: left;
 }
 
+/*
 img.slide-turtle {
   width: 90%;
-}
+}*/
 
 #ameacas-coluna1 {
   margin-left: 3vw;
@@ -458,7 +464,7 @@ h4 {
   padding-top: 126px;
 }
 
-/*-------------------------------------------------------------------------SECÇÃO 3 - DICAS------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------SECÇÃO 5 - IDENTIDADe------------------------------------------------------------------*/
 
 #section5 {
   height: 100vh;
@@ -730,6 +736,7 @@ h4 {
   margin-right: 56px;
   background-image: url("../assets/projetoscard.svg");
   background-size: cover;
+  cursor: grabbing;
   /*content: counter(gallery-cell);*/
 }
 
@@ -832,18 +839,6 @@ h4 {
   /*content: counter(gallery-cell);*/
 }
 
-.flickity-page-dots {
-  margin-bottom: 120px;
-}
-
-.flickity-page-dots .dot {
-  background: #4bb4a1;
-}
-
-.flickity-page-dots .dot.is-selected {
-  background: #3e3947;
-}
-
 .flickity-prev-next-button {
   display: none;
 }
@@ -895,6 +890,12 @@ p {
 }
 
 /*-----------------------------------------------------------------RESPONSIVIDADE-----------------------------------------------------------------------*/
+
+@media screen and (max-height: 750px) {
+  #section3, #section5 {
+    height: 750px;
+  }
+}
 
 @media screen and (max-width: 1360px) {
   #afeta-container {
@@ -966,10 +967,10 @@ p {
   }
   .gallery {
     padding-top: 50px;
-    width: 87vw;
+    width: 98vw;
   }
   .gallery-cell {
-    width: 80vw;
+    width: 87vw;
     height: 850px;
   }
   .projetosDiv {
@@ -1041,9 +1042,9 @@ p {
     row-gap: 20px;
   }
   .gallery-cell {
-    width: 85vw;
+    width: 87vw;
     height: 1000px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .projetosDiv {
     height: 950px;
@@ -1057,8 +1058,8 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-  .item-afeta {
-    padding-left: 0vw;
+  #captura-acidental, #poluicao, #plastico, #desenvolvimento-costeiro, #consumo-ovos, #trafico-T, #aquecimento-global {
+    padding-left: 0px;
     width: 464px;
   }
   #titulo-afeta {
@@ -1082,26 +1083,32 @@ p {
 @media screen and (max-width: 733px) {
   #section2 {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   #coluna-apresentacao1 {
-    width: 90vw;
-  }
-  #coluna-apresentacao2 {
+    display: flex;
     width: 90vw;
     align-items: center;
     justify-content: center;
+    margin-left: 0;
+  }
+  #coluna-apresentacao2 {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
   }
   /*.slideturtleApresentacao {
     width: 80vw;
     margin-left: 3vw
   }*/
   #ameacas-row {
+    margin-top: 88px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  #ameacas-row:first-child {
-    height: 50vh;
   }
   #ameacas-row>* {
     flex: 0 0 auto;
@@ -1117,14 +1124,25 @@ p {
   }
   #ameacas-coluna2 {
     align-items: flex-start;
+    justify-content: center;
     height: 35vh;
     width: 95vw;
   }
+  h1 {
+    padding: 0;
+    width: 100%;
+  }
   #ameacas-coluna1 {
-    height: 70vh;
+    height: 70%;
   }
   #slider {
-    height: 80vh;
+    height: 80%;
+  }
+  .slide-turtle {
+    width: auto;
+  }
+  .slide-turtle-apresentacao {
+    margin-bottom: 20vh;
   }
 }
 
@@ -1162,8 +1180,11 @@ p {
     width: 95vw;
     height: auto;
   }
-  afeta-container {
-    width: 95vw;
+  .afeta-container {
+    width: 100vw;
+  }
+  #coluna-afeta1, #coluna-afeta2 {
+    align-items: flex-start;
   }
   .item-afeta {
     width: 95vw;
@@ -1175,7 +1196,7 @@ p {
     width: 95vw;
   }
   .slide-turtle {
-    width: 95vw;
+    /*width: 95vw;*/
     height: auto;
   }
   .texto-apresentacao, h1 {
@@ -1195,5 +1216,8 @@ p {
   }
   #texto-identidade {
     width: 95vw;
+  }
+  .arrow-container {
+    margin-top: 10vh;
   }
 }
